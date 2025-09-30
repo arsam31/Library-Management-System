@@ -69,6 +69,7 @@ LibraryController:
 - POST /api/library/return
 - GET /api/library/member/{id}
 6. Dependency Injection Setup (Program.cs)
+
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookManager, BookManager>();
 
@@ -77,6 +78,8 @@ builder.Services.AddScoped<IMemberManager, MemberManager>();
 
 builder.Services.AddScoped<ILibraryRepository, LibraryRepository>();
 builder.Services.AddScoped<ILibraryManager, LibraryManager>();
+
+
 7. Static Messages
 Books
 - Book added successfully.
