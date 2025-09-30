@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Members] (
+    [MemberId] INT IDENTITY(1,1) PRIMARY KEY,
+    [Name] NVARCHAR(100) NOT NULL,
+    [Email] NVARCHAR(100) UNIQUE NOT NULL,
+    [IsLibrarian] BIT NOT NULL DEFAULT(0),
+    [CreatedDate] DATETIME NOT NULL DEFAULT(GETDATE())
+);
